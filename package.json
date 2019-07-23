@@ -1,0 +1,48 @@
+{
+  "name": "@skrfont/vendor",
+  "version": "1.0.0",
+  "description": "vendor of @skrfont",
+  "main": "dist/main.js",
+  "scripts": {
+    "vendor": "webpack -p --progress --config ./webpack.dll.conf.js",
+    "build": "webpack --mode production -p --progress",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skrfont/vendor.git"
+  },
+  "keywords": [
+    "vendor"
+  ],
+  "author": "ddosakura",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/skrfont/vendor/issues"
+  },
+  "homepage": "https://github.com/skrfont/vendor#readme",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-transform-runtime": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "chai": "^4.2.0",
+    "element-ui": "^2.10.1",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.2",
+    "lodash": "^4.17.15",
+    "mocha": "^6.2.0",
+    "rxjs": "^6.5.2",
+    "rxjs-compat": "^6.5.2",
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.7",
+    "vue-rx": "^6.2.0",
+    "vuex": "^3.1.1",
+    "webpack": "^4.36.1",
+    "webpack-bundle-analyzer": "^3.3.2",
+    "webpack-cli": "^3.3.6"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.5.5"
+  }
+}
